@@ -1,5 +1,5 @@
-# Paraminter.Parameters.Constructor
+# Paraminter.Parameters.Normal
 
-Adds constructor-parameters to `Paraminter`.
+Adds normal parameters to `Paraminter`.
 
 See [Paraminter](https://www.github.com/Paraminter/Paraminter) for more information.
