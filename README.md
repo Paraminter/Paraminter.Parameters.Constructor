@@ -1,5 +1,5 @@
-# Paraminter.Parameters.Normal
+# Paraminter.Parameters.Method
 
-Adds normal parameters to `Paraminter`.
+Adds method parameters to `Paraminter`.
 
 See [Paraminter](https://www.github.com/Paraminter/Paraminter) for more information.
