@@ -28,5 +28,9 @@ public sealed class AddParaminterMethodParameters
         Assert.Same(services, result);
     }
 
-    private static IServiceCollection Target(IServiceCollection services) => ParaminterMethodParametersServices.AddParaminterMethodParameters(services);
+    private static IServiceCollection Target(
+        IServiceCollection services)
+    {
+        return ParaminterMethodParametersServices.AddParaminterMethodParameters(services);
+    }
 }

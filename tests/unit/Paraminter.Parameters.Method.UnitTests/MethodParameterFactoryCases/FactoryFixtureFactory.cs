@@ -9,11 +9,13 @@ internal static class FactoryFixtureFactory
         return new FactoryFixture(sut);
     }
 
-    private sealed class FactoryFixture : IFactoryFixture
+    private sealed class FactoryFixture
+        : IFactoryFixture
     {
         private readonly IMethodParameterFactory Sut;
 
-        public FactoryFixture(IMethodParameterFactory sut)
+        public FactoryFixture(
+            IMethodParameterFactory sut)
         {
             Sut = sut;
         }
