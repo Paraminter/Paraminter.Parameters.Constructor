@@ -17,13 +17,16 @@ internal static class ParameterFixtureFactory
         return new ParameterFixture(sut, symbolMock);
     }
 
-    private sealed class ParameterFixture : IParameterFixture
+    private sealed class ParameterFixture
+        : IParameterFixture
     {
         private readonly IMethodParameter Sut;
 
         private readonly Mock<IParameterSymbol> SymbolMock;
 
-        public ParameterFixture(IMethodParameter sut, Mock<IParameterSymbol> symbolMock)
+        public ParameterFixture(
+            IMethodParameter sut,
+            Mock<IParameterSymbol> symbolMock)
         {
             Sut = sut;
 

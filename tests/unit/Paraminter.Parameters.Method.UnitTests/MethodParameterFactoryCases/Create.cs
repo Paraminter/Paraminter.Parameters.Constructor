@@ -28,5 +28,9 @@ public sealed class Create
         Assert.NotNull(result);
     }
 
-    private IMethodParameter Target(IParameterSymbol symbol) => Fixture.Sut.Create(symbol);
+    private IMethodParameter Target(
+        IParameterSymbol symbol)
+    {
+        return Fixture.Sut.Create(symbol);
+    }
 }
