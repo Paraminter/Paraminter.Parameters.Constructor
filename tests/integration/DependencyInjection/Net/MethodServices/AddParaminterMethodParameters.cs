@@ -1,4 +1,4 @@
-﻿namespace Paraminter.Parameters.ParaminterMethodParametersServicesCases;
+﻿namespace Paraminter.Parameters;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -13,10 +13,9 @@ public sealed class AddParaminterMethodParameters
     private static void Target(
         IServiceCollection services)
     {
-        ParaminterMethodParametersServices.AddParaminterMethodParameters(services);
+        MethodServices.AddParaminterMethodParameters(services);
     }
 
-    [AssertionMethod]
     private static void ServiceCanBeResolved<TService>()
         where TService : notnull
     {

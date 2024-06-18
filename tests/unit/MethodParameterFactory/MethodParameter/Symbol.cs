@@ -1,4 +1,4 @@
-﻿namespace Paraminter.Parameters.MethodParameterFactoryCases.MethodParameterCases;
+﻿namespace Paraminter.Parameters.MethodParameter;
 
 using Microsoft.CodeAnalysis;
 
@@ -6,7 +6,7 @@ using Xunit;
 
 public sealed class Symbol
 {
-    private readonly IParameterFixture Fixture = ParameterFixtureFactory.Create();
+    private readonly IFixture Fixture = FixtureFactory.Create();
 
     [Fact]
     public void ReturnsSymbol()

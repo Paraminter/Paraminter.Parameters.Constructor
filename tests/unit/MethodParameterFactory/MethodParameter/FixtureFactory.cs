@@ -1,12 +1,12 @@
-﻿namespace Paraminter.Parameters.MethodParameterFactoryCases.MethodParameterCases;
+﻿namespace Paraminter.Parameters.MethodParameter;
 
 using Microsoft.CodeAnalysis;
 
 using Moq;
 
-internal static class ParameterFixtureFactory
+internal static class FixtureFactory
 {
-    public static IParameterFixture Create()
+    public static IFixture Create()
     {
         Mock<IParameterSymbol> symbolMock = new();
 
@@ -14,17 +14,17 @@ internal static class ParameterFixtureFactory
 
         var sut = factory.Create(symbolMock.Object);
 
-        return new ParameterFixture(sut, symbolMock);
+        return new Fixture(sut, symbolMock);
     }
 
-    private sealed class ParameterFixture
-        : IParameterFixture
+    private sealed class Fixture
+        : IFixture
     {
         private readonly IMethodParameter Sut;
 
         private readonly Mock<IParameterSymbol> SymbolMock;
 
-        public ParameterFixture(
+        public Fixture(
             IMethodParameter sut,
             Mock<IParameterSymbol> symbolMock)
         {
@@ -33,8 +33,8 @@ internal static class ParameterFixtureFactory
             SymbolMock = symbolMock;
         }
 
-        IMethodParameter IParameterFixture.Sut => Sut;
+        IMethodParameter IFixture.Sut => Sut;
 
-        Mock<IParameterSymbol> IParameterFixture.SymbolMock => SymbolMock;
+        Mock<IParameterSymbol> IFixture.SymbolMock => SymbolMock;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Paraminter.Parameters.ParaminterMethodParametersServicesCases;
+﻿namespace Paraminter.Parameters;
 
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +11,7 @@ using Xunit;
 public sealed class AddParaminterMethodParameters
 {
     [Fact]
-    public void NullServiceCollection_ArgumentNullException()
+    public void NullServiceCollection_ThrowsArgumentNullException()
     {
         var result = Record.Exception(() => Target(null!));
 
@@ -31,6 +31,6 @@ public sealed class AddParaminterMethodParameters
     private static IServiceCollection Target(
         IServiceCollection services)
     {
-        return ParaminterMethodParametersServices.AddParaminterMethodParameters(services);
+        return MethodServices.AddParaminterMethodParameters(services);
     }
 }
