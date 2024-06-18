@@ -1,11 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-
-        <RootNamespace>Paraminter.Parameters</RootNamespace>
-
-        <Title>Paraminter.Parameters.Method.Core</Title>
+        <PackageId>Paraminter.Parameters.Method.Core</PackageId>
         <Description>Defines Paraminter method parameters.</Description>
     </PropertyGroup>
 

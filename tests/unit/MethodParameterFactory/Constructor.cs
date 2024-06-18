@@ -1,4 +1,4 @@
-﻿namespace Paraminter.Parameters.MethodParameterFactoryCases;
+﻿namespace Paraminter.Parameters;
 
 using Xunit;
 
