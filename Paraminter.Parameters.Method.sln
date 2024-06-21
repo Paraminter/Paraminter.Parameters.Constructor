@@ -33,13 +33,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net", "Net", "{06BA634B-D649-45BB-8046-22DF6E5A1A5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_MethodServices", "tests\integration\DependencyInjection\Net\MethodServices\IT_MethodServices.csproj", "{44C0815C-E45B-4235-8731-EADA38E6ACFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_MethodParameterServices", "tests\integration\DependencyInjection\Net\MethodParameterServices\IT_MethodParameterServices.csproj", "{44C0815C-E45B-4235-8731-EADA38E6ACFF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{5B685130-D7D7-4F20-A4E8-FE150C760285}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_MethodParameterFactory", "tests\unit\MethodParameterFactory\UT_MethodParameterFactory.csproj", "{C9FE2EC9-C2A0-492D-AEB6-CB2830167FE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_MethodServices", "tests\unit\MethodServices\UT_MethodServices.csproj", "{22A69FCA-D9FD-4462-8FCB-5A502CDBAA00}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{FC9AB03D-FE87-4F8F-B3F9-11E458034404}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net", "Net", "{176B498E-C64E-47DB-8076-EF29C7C63519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_MethodParameterServices", "tests\unit\DependencyInjection\Net\MethodParameterServices\UT_MethodParameterServices.csproj", "{4AE28451-B7F6-4949-978C-DCC54D11A99C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,16 +75,13 @@ Global
 		{C9FE2EC9-C2A0-492D-AEB6-CB2830167FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9FE2EC9-C2A0-492D-AEB6-CB2830167FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9FE2EC9-C2A0-492D-AEB6-CB2830167FE0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22A69FCA-D9FD-4462-8FCB-5A502CDBAA00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22A69FCA-D9FD-4462-8FCB-5A502CDBAA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22A69FCA-D9FD-4462-8FCB-5A502CDBAA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22A69FCA-D9FD-4462-8FCB-5A502CDBAA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE28451-B7F6-4949-978C-DCC54D11A99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE28451-B7F6-4949-978C-DCC54D11A99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE28451-B7F6-4949-978C-DCC54D11A99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE28451-B7F6-4949-978C-DCC54D11A99C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2CA5E2D6-6A46-4A12-B560-283F3034E440}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{088F8EC8-6C03-4848-860C-64367319F24C} = {A9DAAFB2-175A-4198-9A82-E9BCE0E7F41E}
@@ -94,6 +95,11 @@ Global
 		{44C0815C-E45B-4235-8731-EADA38E6ACFF} = {06BA634B-D649-45BB-8046-22DF6E5A1A5B}
 		{5B685130-D7D7-4F20-A4E8-FE150C760285} = {20D00D18-4E0F-457A-80DA-AC8C75E8609F}
 		{C9FE2EC9-C2A0-492D-AEB6-CB2830167FE0} = {5B685130-D7D7-4F20-A4E8-FE150C760285}
-		{22A69FCA-D9FD-4462-8FCB-5A502CDBAA00} = {5B685130-D7D7-4F20-A4E8-FE150C760285}
+		{FC9AB03D-FE87-4F8F-B3F9-11E458034404} = {5B685130-D7D7-4F20-A4E8-FE150C760285}
+		{176B498E-C64E-47DB-8076-EF29C7C63519} = {FC9AB03D-FE87-4F8F-B3F9-11E458034404}
+		{4AE28451-B7F6-4949-978C-DCC54D11A99C} = {176B498E-C64E-47DB-8076-EF29C7C63519}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CA5E2D6-6A46-4A12-B560-283F3034E440}
 	EndGlobalSection
 EndGlobal

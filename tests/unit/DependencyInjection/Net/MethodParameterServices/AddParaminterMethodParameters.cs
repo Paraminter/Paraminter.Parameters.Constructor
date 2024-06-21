@@ -31,6 +31,6 @@ public sealed class AddParaminterMethodParameters
     private static IServiceCollection Target(
         IServiceCollection services)
     {
-        return MethodServices.AddParaminterMethodParameters(services);
+        return MethodParameterServices.AddParaminterMethodParameters(services);
     }
 }
