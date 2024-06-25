@@ -4,7 +4,7 @@
         <AssemblyName>Paraminter.Parameters.Method</AssemblyName>
 
         <PackageId>Paraminter.Parameters.Method</PackageId>
-        <Description>Provides components related to Paraminter method parameters.</Description>
+        <Description>Provides general implementations of services related to Paraminter method parameters.</Description>
     </PropertyGroup>
 
     <ItemGroup>
