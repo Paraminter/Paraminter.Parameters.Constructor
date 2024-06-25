@@ -4,7 +4,7 @@
         <AssemblyName>Paraminter.Parameters.Method.Abstractions</AssemblyName>
 
         <PackageId>Paraminter.Parameters.Method.Abstractions</PackageId>
-        <Description>Provides abstractions related to Paraminter method parameters.</Description>
+        <Description>Provides abstractions of services related to Paraminter method parameters.</Description>
     </PropertyGroup>
 
     <ItemGroup>
