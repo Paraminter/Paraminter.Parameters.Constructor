@@ -12,5 +12,5 @@ public sealed class Constructor
         Assert.NotNull(result);
     }
 
-    private static MethodParameterFactory Target() => new();
+    private static GetMethodParameterQueryHandler Target() => new();
 }
