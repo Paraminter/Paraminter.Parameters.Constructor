@@ -2,8 +2,8 @@
 
 using Microsoft.CodeAnalysis;
 
-/// <summary>Represents a query for a method parameter.</summary>
-public interface IGetMethodParameterQuery
+/// <summary>Represents a query for a method parameter, given the symbol associated with the method parameter.</summary>
+public interface IGetMethodParameterBySymbolQuery
     : IQuery
 {
     /// <summary>The symbol associated with the method parameter.</summary>
