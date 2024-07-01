@@ -21,13 +21,13 @@ public sealed class Handle
     [Fact]
     public void ValidQuery_ReturnsMethodParameter()
     {
-        var result = Target(Mock.Of<IGetMethodParameterQuery>());
+        var result = Target(Mock.Of<IGetMethodParameterBySymbolQuery>());
 
         Assert.NotNull(result);
     }
 
     private IMethodParameter Target(
-        IGetMethodParameterQuery query)
+        IGetMethodParameterBySymbolQuery query)
     {
         return Fixture.Sut.Handle(query);
     }
