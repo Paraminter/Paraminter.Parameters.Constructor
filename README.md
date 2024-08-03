@@ -1,5 +1,5 @@
 # Paraminter.Parameters.Method
 
-Adds method parameters to `Paraminter`.
+Defines `Paraminter` method parameters.
 
 See [Paraminter](https://www.github.com/Paraminter/Paraminter) for more information.
